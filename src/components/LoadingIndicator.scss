@@ -1,0 +1,30 @@
+.loading-indicator {
+  height: 100%;
+  width: auto;
+}
+
+.monkey {
+  stroke: blue;
+  stroke-width: 2px;
+  stroke-dashoffset: -2000;
+  stroke-dasharray: 2000;
+  animation-name: monkey;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
+@keyframes monkey {
+  0% {
+    stroke-dashoffset: -2000;
+    stroke: red;
+  }
+  50% {
+    stroke: yellow;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}

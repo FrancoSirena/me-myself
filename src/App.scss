@@ -1,0 +1,22 @@
+$gap: 20px;
+
+#root {
+  height: 100vh;
+  width: 100vw;
+}
+
+.app-container {
+  font-family: "Noto Sans KR", sans-serif;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  padding: $gap;
+  background-image: linear-gradient(
+    to right bottom,
+    #6fadaa,
+    #5a9696,
+    #478082,
+    #336a6e,
+    #20555b
+  );
+}

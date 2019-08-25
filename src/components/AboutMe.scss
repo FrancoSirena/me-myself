@@ -1,0 +1,37 @@
+.intro {
+  text-align: left;
+  font-size: 1em;
+  display: grid;
+  padding: 20px 40px;
+  grid-template-rows: 1fr;
+  grid-column-gap: 40px;
+  grid-template-columns: 1fr 1fr;
+  .title {
+    grid-column: 1 / span 2;
+    justify-self: center;
+  }
+  h1 {
+    font-size: 1.2em;
+  }
+}
+
+.intro-tiny-me {
+  grid-column: 2 / span 1;
+  position: relative;
+}
+
+.intro-pic-circle {
+  shape-outside: circle(50%);
+  height: 120px;
+  width: 120px;
+  float: left;
+  top: 40px;
+}
+
+.intro-pic {
+  position: absolute;
+  height: 100px;
+  left: 10px;
+  border-radius: 50%;
+  top: 10px;
+}
