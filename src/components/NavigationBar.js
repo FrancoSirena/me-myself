@@ -11,9 +11,6 @@ function NavigationBar() {
       <NavLink className="nav-link" to="/experiences">
         Experiences
       </NavLink>
-      <NavLink className="nav-link" to="/social">
-        Social
-      </NavLink>
     </div>
   );
 }

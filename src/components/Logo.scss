@@ -3,5 +3,8 @@
   .logo {
     max-height: 60px;
     border-radius: 50%;
+    &:hover {
+      box-shadow: 5px 4px 10px -3px rgba(255, 255, 255, 0.8);
+    }
   }
 }

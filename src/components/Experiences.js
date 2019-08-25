@@ -1,4 +1,5 @@
 import React from "react";
+import withDefaultAnimation from "./helpers/withDefaultAnimation";
 
 function Experiences() {
   return (
@@ -27,4 +28,4 @@ function Experiences() {
   );
 }
 
-export default Experiences;
+export default withDefaultAnimation(Experiences);

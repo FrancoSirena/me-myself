@@ -1,4 +1,5 @@
 import React from "react";
+import withDefaultAnimation from "./helpers/withDefaultAnimation";
 
 function Home() {
   return (
@@ -34,4 +35,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default withDefaultAnimation(Home);

@@ -29,9 +29,13 @@
 }
 
 .intro-pic {
+  image-rendering: crisp-edges;
   position: absolute;
   height: 100px;
   left: 10px;
   border-radius: 50%;
   top: 10px;
+  &:hover {
+    transform: scale(1.5);
+  }
 }
