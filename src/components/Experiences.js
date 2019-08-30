@@ -1,9 +1,11 @@
 import React from "react";
-import withDefaultAnimation from "./helpers/withDefaultAnimation";
+import useAnimation from "./useAnimation";
+import "./Experience.scss";
 
 function Experiences() {
+  const { elem, visible } = useAnimation();
   return (
-    <ul>
+    <ul ref={elem} className={`${visible ? "visible" : "hide"}`}>
       <li>
         Bitsight - PT
         <h1>Senior Software Engineer</h1>
@@ -28,4 +30,4 @@ function Experiences() {
   );
 }
 
-export default withDefaultAnimation(Experiences);
+export default Experiences;

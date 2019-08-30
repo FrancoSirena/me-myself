@@ -1,13 +1,14 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
-import withDefaultAnimation from "./helpers/withDefaultAnimation";
+import useAnimation from "./useAnimation";
 import me from "../tinyme.jpeg";
 import "./AboutMe.scss";
 
 function AboutMe() {
+  const { elem, visible } = useAnimation();
   return (
-    <section className="intro">
+    <section ref={elem} className={`${visible ? "visible" : "hide"} intro`}>
       <div className="title">
         <h1>Little bit about myself</h1>
       </div>
@@ -31,4 +32,4 @@ function AboutMe() {
   );
 }
 
-export default withDefaultAnimation(AboutMe);
+export default AboutMe;

@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 import axios from "axios";
 
 import LoadingIndicator from "./LoadingIndicator";
@@ -22,14 +21,12 @@ function Logo({ userId }) {
       {loading ? (
         <LoadingIndicator />
       ) : (
-        <Link to="/about">
-          <img
-            src={user.avatar_url}
-            alt={user.name}
-            className="logo"
-            title={user.name}
-          />
-        </Link>
+        <img
+          src={user.avatar_url}
+          alt={user.name}
+          className="logo"
+          title={user.name}
+        />
       )}
     </div>
   );
