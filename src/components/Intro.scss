@@ -1,0 +1,48 @@
+.Intro {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  .description {
+    flex-grow: 1;
+    align-self: flex-end;
+    padding-left: 16px;
+  }
+  .tools {
+    flex-grow: 0;
+    display: flex;
+    flex-wrap: wrap;
+    animation-name: rotate;
+    animation-iteration-count: 2;
+    animation-timing-function: ease-in-out;
+    animation-duration: 2s;
+    svg {
+      padding-right: 12px;
+      @for $i from 1 to 6 {
+        &:nth-child(#{$i}) {
+          @if $i % 2 == 0 {
+            padding-top: 24px;
+          }
+          padding-bottom: 24px;
+        }
+      }
+    }
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotateY(0deg);
+  }
+
+  40% {
+    transform: rotateY(90deg);
+  }
+
+  60% {
+    transform: rotateY(180deg);
+  }
+
+  80% {
+    transform: rotateY(270deg);
+  }
+}

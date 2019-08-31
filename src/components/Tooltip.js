@@ -31,7 +31,7 @@ function Tooltip({ parent, onDestroy, children }) {
     } else if (self.current) {
       const element = self.current;
       container.style.opacity = 1;
-      container.style.position = "absolute";
+      container.style.position = "fixed";
       container.style.left = `${parent.current.getBoundingClientRect().left -
         element.getBoundingClientRect().width}px`;
       container.style.top = `${parent.current.getBoundingClientRect().top -

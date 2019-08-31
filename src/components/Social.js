@@ -11,6 +11,7 @@ import { faAddressCard } from "@fortawesome/free-solid-svg-icons";
 import Tooltip from "./Tooltip";
 import LinkOffsite from "./LinkOffsite";
 import withDefaultAnimation from "./helpers/withDefaultAnimation";
+import colors from "../pallet.scss";
 
 import "./Social.scss";
 
@@ -43,7 +44,11 @@ function Social() {
       ref={parent}
       className="social-trigger-icon"
     >
-      <FontAwesomeIcon icon={faAddressCard} size="4x" />
+      <FontAwesomeIcon
+        icon={faAddressCard}
+        color={colors.secondary}
+        size="4x"
+      />
       {visible && (
         <Tooltip parent={parent} onDestroy={() => setVisible(v => !v)}>
           <section className="social-container">
@@ -56,6 +61,7 @@ function Social() {
                         size="2x"
                         className="social-icon"
                         icon={icon}
+                        color={colors.text}
                       />{" "}
                       {key}
                     </div>

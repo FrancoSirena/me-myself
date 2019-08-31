@@ -1,6 +1,9 @@
+@import "../pallet.scss";
+
 .LinkOffsite {
+  color: $text;
   &:visited {
-    color: inherit;
+    color: $text;
   }
   &:hover {
     font-size: 1.1em;

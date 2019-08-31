@@ -1,21 +1,24 @@
-import { useLayoutEffect, useState, useRef } from "react";
+import { useEffect, useState, useRef } from "react";
 
 function useAnimation() {
   const elem = useRef(null);
   const [visible, setVisible] = useState(false);
-  useLayoutEffect(() => {
+  useEffect(() => {
     const event = () => {
-      const position = elem.current.getBoundingClientRect();
-      if (position.top <= window.pageYOffset && !visible) {
-        console.log("here");
+      if (
+        window.innerHeight + window.pageYOffset >
+          elem.current.offsetTop - 200 + elem.current.clientHeight &&
+        !visible
+      ) {
         setVisible(true);
       }
     };
     window.addEventListener("scroll", event);
+    event();
     return () => {
       event && window.removeEventListener("scroll", event);
     };
-  }, [visible]);
+  }, [visible, elem]);
 
   return { elem, visible };
 }

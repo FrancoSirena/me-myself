@@ -1,8 +1,11 @@
+@import "./pallet.scss";
+
 $gap: 20px;
 
 #root {
   height: 100vh;
   width: 100vw;
+  color: $text;
 }
 
 .app-container {
@@ -11,27 +14,34 @@ $gap: 20px;
   height: auto;
   width: 100%;
   padding: $gap;
-  background-image: linear-gradient(
-    to right bottom,
-    #6fadaa,
-    #5a9696,
-    #478082,
-    #336a6e,
-    #20555b
-  );
+  background-color: $background2;
 }
 
 .separator {
   stroke-width: 1px;
-  stroke: #2e2e2e;
+  stroke: $primary;
   stroke-linecap: butt;
   width: 100%;
   height: 40px;
-  fill: #4b1e1e;
+  fill: $primary;
 }
 
-.container {
-  &:not(:last-child) {
-    border-bottom: 1px #2e2e2e solid;
-  }
+.triangle {
+  width: 20vw;
+  height: 20vw;
+  position: fixed;
+  left: 0;
+  opacity: 0.3;
+  top: 0;
+  fill: $background1;
+}
+
+.triangleB {
+  width: 20vw;
+  height: 20vw;
+  position: fixed;
+  right: 0;
+  opacity: 0.3;
+  bottom: 0;
+  fill: $primary;
 }

@@ -1,0 +1,25 @@
+$primary: #95ffff;
+$secondary: #ffade9;
+$default: #56b3b3;
+$background1: #ccbb62;
+$background2: #b3a55f;
+$text: floralwhite;
+
+:export {
+  primary: $primary;
+}
+:export {
+  secondary: $secondary;
+}
+:export {
+  default: $default;
+}
+:export {
+  background1: $background1;
+}
+:export {
+  background2: $background2;
+}
+:export {
+  text: $text;
+}
