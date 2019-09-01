@@ -8,9 +8,9 @@
     padding-left: 16px;
   }
   .tools {
-    flex-grow: 0;
+    float: left;
+    shape-outside: ellipse(120px 80px at 60% 20%);
     display: flex;
-    flex-wrap: wrap;
     animation-name: rotate;
     animation-iteration-count: 2;
     animation-timing-function: ease-in-out;

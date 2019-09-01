@@ -17,6 +17,9 @@
 
 .intro-tiny-me {
   grid-column: 2 / span 1;
+  @media screen and (max-width: 600px) {
+    grid-column: 1 / span 2;
+  }
   position: relative;
 }
 
@@ -26,6 +29,9 @@
   width: 120px;
   float: left;
   top: 40px;
+  @media screen and (max-width: 500px) {
+    float: none;
+  }
 }
 
 .intro-pic {

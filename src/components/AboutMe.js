@@ -14,6 +14,7 @@ function AboutMe() {
       </div>
       <div>
         <FontAwesomeIcon icon={faHome} size="6x" />
+        <br />
         Lisbon - Portugal
       </div>
       <article className="intro-tiny-me">
