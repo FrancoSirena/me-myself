@@ -8,11 +8,8 @@ import "./AboutMe.scss";
 function AboutMe() {
   const { elem, visible } = useAnimation();
   return (
-    <section ref={elem} className={`${visible ? "visible" : "hide"} intro`}>
-      <div className="title">
-        <h1>Little bit about myself</h1>
-      </div>
-      <div>
+    <div ref={elem} className={`${visible ? "visible" : "hide"} intro`}>
+      <div className="intro-location">
         <FontAwesomeIcon icon={faHome} size="6x" />
         <br />
         Lisbon - Portugal
@@ -29,7 +26,7 @@ function AboutMe() {
           Engineering to after a while figure out that IT was my thing for life.
         </p>
       </article>
-    </section>
+    </div>
   );
 }
 

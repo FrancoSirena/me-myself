@@ -9,13 +9,13 @@ import Intro from "./Intro";
 function Home() {
   return (
     <section>
-      <Card>
+      <Card title="Intro">
         <Intro />
       </Card>
-      <Card>
+      <Card title="Experiences">
         <Experiences />
       </Card>
-      <Card>
+      <Card title="About Me">
         <AboutMe />
       </Card>
       <Social />

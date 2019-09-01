@@ -8,10 +8,22 @@ $gap: 20px;
   color: $text;
 }
 
+h1,
+h2,
+h3 {
+  font-family: "Slabo 27px", serif;
+  margin: 0;
+}
+
+h1 {
+  font-size: 2em;
+}
+
 .app-container {
-  font-family: "Noto Sans KR", sans-serif;
+  font-family: "Manjari", sans-serif;
   box-sizing: border-box;
   height: auto;
+  font-size: 16px;
   width: 100%;
   padding: $gap;
   background-color: $background2;
