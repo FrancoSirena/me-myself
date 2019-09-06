@@ -1,6 +1,5 @@
 import React from "react";
 import useAnimation from "./useAnimation";
-import "./Experience.scss";
 
 function Experiences() {
   const { elem, visible } = useAnimation();
