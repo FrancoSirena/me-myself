@@ -1,0 +1,20 @@
+@import "./pallets/professional.scss";
+
+:export {
+  primary: $primary;
+}
+:export {
+  secondary: $secondary;
+}
+:export {
+  default: $default;
+}
+:export {
+  background1: $background1;
+}
+:export {
+  background2: $background2;
+}
+:export {
+  text: $text;
+}

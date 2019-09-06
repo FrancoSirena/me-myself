@@ -1,5 +1,7 @@
+@import "../pallet.scss";
+
 .social-container {
-  background-color: white;
+  background-color: $secondary;
   border-radius: 25px 25px 0 25px;
   ul {
     padding: 8px;

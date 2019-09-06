@@ -1,18 +1,17 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
-import withDefaultAnimation from "./helpers/withDefaultAnimation";
+import useAnimation from "./useAnimation";
 import me from "../tinyme.jpeg";
 import "./AboutMe.scss";
 
 function AboutMe() {
+  const { elem, visible } = useAnimation();
   return (
-    <section className="intro">
-      <div className="title">
-        <h1>Little bit about myself</h1>
-      </div>
-      <div>
+    <div ref={elem} className={`${visible ? "visible" : "hide"} intro`}>
+      <div className="intro-location">
         <FontAwesomeIcon icon={faHome} size="6x" />
+        <br />
         Lisbon - Portugal
       </div>
       <article className="intro-tiny-me">
@@ -27,8 +26,8 @@ function AboutMe() {
           Engineering to after a while figure out that IT was my thing for life.
         </p>
       </article>
-    </section>
+    </div>
   );
 }
 
-export default withDefaultAnimation(AboutMe);
+export default AboutMe;

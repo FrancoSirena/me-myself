@@ -1,0 +1,12 @@
+@import "../pallet.scss";
+
+.card {
+  width: 100%;
+  &:not(:last-of-type) {
+    border-bottom: 1px solid $primary;
+  }
+}
+
+.separator:last-of-type {
+  display: none;
+}
