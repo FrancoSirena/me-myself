@@ -1,19 +1,20 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHome } from "@fortawesome/free-solid-svg-icons";
+import withDefaultAnimation from "./helpers/withDefaultAnimation";
 import me from "../tinyme.jpeg";
 import "./AboutMe.scss";
 
-function Home() {
+function AboutMe() {
   return (
     <section className="intro">
       <div className="title">
         <h1>Little bit about myself</h1>
       </div>
-      <form>
-        <fieldset>
-          <label for="email">Email</label> <br />
-          <input type="text" />
-        </fieldset>
-      </form>
+      <div>
+        <FontAwesomeIcon icon={faHome} size="6x" />
+        Lisbon - Portugal
+      </div>
       <article className="intro-tiny-me">
         <div className="intro-pic-circle" />
         <img src={me} alt="Tiny me" className="intro-pic" />
@@ -30,4 +31,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default withDefaultAnimation(AboutMe);

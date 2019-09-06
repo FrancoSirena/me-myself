@@ -1,0 +1,30 @@
+.social-container {
+  background-color: white;
+  border-radius: 25px 25px 0 25px;
+  ul {
+    padding: 8px;
+    list-style-type: none;
+    .social-item {
+      display: flex;
+      justify-content: flex-start;
+      align-content: center;
+    }
+    .social-icon {
+      padding-right: 16px;
+    }
+  }
+}
+
+.social-trigger-icon {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  border: unset;
+  box-shadow: none;
+  background-color: transparent;
+  box-sizing: content-box;
+  cursor: pointer;
+  &:focus {
+    outline: unset;
+  }
+}

@@ -1,6 +1,5 @@
-I need to come up with my own website to show some of my experiences and what I can do.
-
-React + SCSS with GRID.
+Just my repo with some experimentations and playings around with react and styling.
 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+**This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
